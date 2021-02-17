@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- <script src="./index.js"></script> -->
-    </head>
-    <body>
-        <div>
-            <button id="prevImg"> Prev </button>
-            <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px"/>
-            <button id="nextImg"> Next </button>
-           </div>
 
-           <script src="./index.js"></script>
-    </body>
+<head>
+    <!-- <script src="./index.js"></script> -->
+</head>
+
+<body>
+    <div>
+        <button id="prevImg"> Prev </button>
+        <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px" />
+        <button id="nextImg"> Next </button>
+    </div>
+
+    <form onsubmit="return validate()" method="post">
+        Number: <input type="text" name="num1" id="num1" />
+        Repeat: <input type="text" name="num2" id="num2" />
+        <input type="submit" value="Submit" />
+
+
+    </form>
+
+    <script src="./index.js"></script>
+    <script src="./ES6_notes.js"></script>
+</body>
+
 </html>
