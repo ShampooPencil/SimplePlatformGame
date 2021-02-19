@@ -12,18 +12,18 @@ console.log(config.mobileSize)
 // Object.assign() is also useful for creating a duplicate of an existing object.
 
 // Let's look at the following example to see how to combine objects:
-let person = {
-    name: 'Jack',
-    age: 18,
-    sex: 'male'
-}
-let student = {
-    name: 'Bob',
-    age: 20,
-    xp: '2'
-}
-let newStudent = Object.assign({}, person, student)
-console.log(newStudent)
+// let person = {
+//     name: 'Jack',
+//     age: 18,
+//     sex: 'male'
+// }
+// let student = {
+//     name: 'Bob',
+//     age: 20,
+//     xp: '2'
+// }
+// let newStudent = Object.assign({}, person, student)
+// console.log(newStudent)
 // Here/\/\/\/\ we used Object.assign() where the first parameter is the target object you want to apply new properties to.
 // Every parameter after the first will be used as sources for the target. There are no limitations on the number of source parameters. However, order is important because properties in the second parameter will be overridden by properties of the same name in third parameter, and so on.
 
@@ -31,14 +31,14 @@ console.log(newStudent)
 // Try changing the order of second and third parameters to see what happens to the result.
 // To avoid this (mutations), use Object.assign() to create a new object.
 // For example:
-let person = {
-    name: 'Jack',
-    age: 18
-}
-let newPerson = Object.assign({}, person)
-newPerson.name = 'Bob'
-console.log(person.name) // Jack
-console.log(newPerson.name) //Bob
+// let person = {
+//     name: 'Jack',
+//     age: 18
+// }
+// let newPerson = Object.assign({}, person)
+// newPerson.name = 'Bob'
+// console.log(person.name) // Jack
+// console.log(newPerson.name) //Bob
 
 // Finally, you can assign a value to an object property in the Object.assign() statement.
 // For example:

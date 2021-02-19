@@ -58,7 +58,7 @@ console.log(foo) // 42 because its the value of foo. the value of h is foo.
 var obj = { id: 42, name: "Jack" };
 let { id = 10, age = 20 } = obj;
 console.log(id); // 42
-console.log(obj.name); // 20
+console.log(obj.name); // Jack
 
 
 
